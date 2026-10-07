@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+ background-color: #f2f2f2;
+
+    color: #222222;
+    margin: 0;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* Headings */
+
+h1 {
+    text-align: center;
+    color: #111827;
+}
+
+h2 {
+    text-align: center;
+    color: #111827;
+}
+
+
+/* Form, Preview and Students Boxes */
+
+.form-box,
+.preview-card,
+.students-box {
+ ackground-color: #bfdbfe;
+
+
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #111827;
+}
+
+
+/* Input and Select */
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* Input Focus */
+
+input:focus,
+select:focus {
+    border-color: #69748d;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Button Hover */
+
+button:hover {
+    background-color: #15803d;
+}
+
+
+/* Error Messages */
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
+    margin: 5px 0;
+    min-height: 18px;
+}
+
+
+/* Registered Student */
+
+.student {
+    background-color: #eeeeee;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+/* Dark Mode Button */
+
+#darkModeBtn {
+    background-color: #333333;
+}
+
+#darkModeBtn:hover {
+    background-color: #111111;
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+
+/* Dark Mode Boxes */
+
+body.dark .form-box,
+body.dark .preview-card,
+body.dark .students-box {
+    background-color: #1e1e1e;
+}
+
+
+/* Dark Mode Headings */
+
+body.dark h1,
+body.dark h2 {
+    color: white;
+}
+
+
+/* Dark Mode Labels */
+
+body.dark label {
+    color: white;
+}
+
+/* Dark Mode Inputs */
+
+body.dark input,
+body.dark select {
+    background-color: #333333;
+    color: white;
+    border-color: #555555;
+}
+
+
+/* Dark Mode Input Focus */
+
+body.dark input:focus,
+body.dark select:focus {
+    border-color: #60a5fa;
+}
+
+
+/* Dark Mode Student */
+
+body.dark .student {
+    background-color: #333333;
+}

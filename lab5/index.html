@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <button id="darkModeBtn">Dark Mode</button>
+
+        <h1>Student Registration Form</h1>
+
+        <!-- Registration Form -->
+        <div class="form-box">
+
+            <form id="studentForm">
+
+                <!-- Full Name -->
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter full name">
+                <p id="nameError" class="error"></p>
+
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email">
+                <p id="emailError" class="error"></p>
+
+                <!-- Program -->
+                <label for="program">Program</label>
+                <select id="program">
+                    <option value="">Select Program</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="full stack web development">full stack web development</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                </select>
+                <p id="programError" class="error"></p>
+
+                <!-- Semester -->
+                <label for="semester">Semester</label>
+                <input type="number" id="semester" placeholder="1 - 8">
+                <p id="semesterError" class="error"></p>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+
+        <!-- Preview Card -->
+        <div class="preview-card">
+
+            <h2>Student Preview</h2>
+
+            <p>
+                <strong>Name:</strong>
+                <span id="previewName">---</span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="previewEmail">---</span>
+            </p>
+
+            <p>
+                <strong>Program:</strong>
+                <span id="previewProgram">---</span>
+            </p>
+
+            <p>
+                <strong>Semester:</strong>
+                <span id="previewSemester">---</span>
+            </p>
+
+        </div>
+
+
+        <!-- Registered Students -->
+        <div class="students-box">
+
+            <h2>Registered Students</h2>
+
+            <div id="studentList"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
